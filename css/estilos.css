@@ -1,0 +1,160 @@
+/* Estilos de Tacos El Gym */
+
+/* Colores que usé:
+   rojo: #c8321e
+   verde: #2f6b3a
+   fondo: #fff8ec
+   texto: #2b1d14 */
+
+body {
+  margin: 0;
+  background-color: #fff8ec;
+  color: #2b1d14;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* ----- Menú de arriba ----- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 2px solid #e8d9bf;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #c8321e;
+  text-decoration: none;
+}
+
+nav a {
+  color: #2b1d14;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+nav a:hover {
+  color: #c8321e;
+}
+
+/* ----- Página de inicio ----- */
+.hero {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #6b5a4b;
+  margin-bottom: 20px;
+}
+
+/* ----- Botones ----- */
+.btn {
+  display: inline-block;
+  background-color: #c8321e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.alt {
+  background-color: #2f6b3a;
+}
+
+/* ----- Contenido de cada página ----- */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+/* ----- Catálogo ----- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.item {
+  background-color: white;
+  border: 2px solid #e8d9bf;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.emoji {
+  font-size: 32px;
+}
+
+.item h3 {
+  margin: 5px 0;
+}
+
+.item p {
+  color: #6b5a4b;
+  font-size: 15px;
+}
+
+.price {
+  color: #2f6b3a;
+  font-weight: bold;
+}
+
+/* ----- Carrito y contacto ----- */
+.cart,
+.contact {
+  background-color: white;
+  border: 2px solid #e8d9bf;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e8d9bf;
+}
+
+textarea {
+  width: 100%;
+  margin: 8px 0 15px 0;
+  padding: 10px;
+  border: 2px solid #e8d9bf;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* ----- Pie de página ----- */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #6b5a4b;
+  border-top: 2px solid #e8d9bf;
+  margin-top: 20px;
+}
